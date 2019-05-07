@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+		
+	<link rel="shortcut icon" href="../../soho-wordpress/wp-content/themes/soho/images/favicon.ico">
+		
+    <title>Page not found &#8211; Soho &#8211; The Ultimate Portfolio Theme</title>
+<link rel='dns-prefetch' href='../../../../fonts.googleapis.com/default.htm' />
+<link rel='dns-prefetch' href='../../../../s.w.org/default.htm' />
+<link rel="alternate" type="application/rss+xml" title="Soho - The Ultimate Portfolio Theme &raquo; Feed" href="../../soho-wordpress/feed/default.htm" />
+<link rel="alternate" type="application/rss+xml" title="Soho - The Ultimate Portfolio Theme &raquo; Comments Feed" href="../../soho-wordpress/comments/feed/default.htm" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"../../../../https@s.w.org/images/core/emoji/11/72x72/","ext":".png","svgUrl":"../../../../https@s.w.org/images/core/emoji/11/svg/default.htm","svgExt":".svg","source":{"concatemoji":"../../soho-wordpress/wp-includes/js/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='../../soho-wordpress/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho_flexslider-css'  href='../../soho-wordpress/wp-content/themes/soho/css/flexslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho_sliders-css'  href='../../soho-wordpress/wp-content/themes/soho/css/sliders.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho_animsition-css'  href='../../soho-wordpress/wp-content/themes/soho/css/animsition.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho_photoswipe-css'  href='../../soho-wordpress/wp-content/themes/soho/css/photoswipe.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho_owlcarousel-css'  href='../../soho-wordpress/wp-content/themes/soho/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho-theme-css'  href='../../soho-wordpress/wp-content/themes/soho/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='soho_fontawesome-css'  href='../../soho-wordpress/wp-content/themes/soho/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='clapat-soho-font-css'  href='../../../../fonts.googleapis.com/css@family=Open+Sans_253A700,400' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='../../soho-wordpress/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-clapat_soho_theme_options-css'  href='../../../../fonts.googleapis.com/css@family=Open+Sans_253A400_257CMontserrat_253A100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' type='text/css' media='all' />
+<script type='text/javascript' src='../../soho-wordpress/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../../soho-wordpress/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gadwpUAEventsData = {"options":{"event_tracking":0,"event_downloads":"zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*","event_bouncerate":0,"aff_tracking":1,"event_affiliates":"\/buy-now\/","hash_tracking":0,"root_domain":"clapat.ro","event_timeout":100,"event_precision":0,"event_formsubmit":0,"ga_pagescrolldepth_tracking":0,"ga_with_gtag":0}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../soho-wordpress/wp-content/plugins/google-analytics-dashboard-for-wp/front/js/tracking-analytics-events.js'></script>
+<link rel='https://api.w.org/' href='../../soho-wordpress/wp-json/default.htm' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://clapat.ro/themes/soho-wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../soho-wordpress/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='canonical' href='../../../../https@www.clapat.com/themes/soho/default.htm' />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('../../soho-wordpress/@wordfence_lh=1&hid=985C5049042D3546B1A6865437211BA2');
+</script><style type="text/css">.single-post .post .container {
+    padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.single-post .post .container {
+    padding: 0 20px;
+}
+}</style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="../../soho-wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="../../soho-wordpress/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
+<style type="text/css"></style>
+
+<style type="text/css">
+.synved-social-resolution-single {
+display: inline-block;
+}
+.synved-social-resolution-normal {
+display: inline-block;
+}
+.synved-social-resolution-hidef {
+display: none;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx),
+only screen and (min-resolution: 192dpi) {
+	.synved-social-resolution-normal {
+	display: none;
+	}
+	.synved-social-resolution-hidef {
+	display: inline-block;
+	}
+}
+</style>
+
+<!-- BEGIN ExactMetrics v5.3.7 Universal Analytics - https://exactmetrics.com/ -->
+<!--ipt>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-85363540-3', 'auto');
+  ga('send', 'pageview');
+</scri-->
+<!-- END ExactMetrics Universal Analytics -->
+<style type="text/css" title="dynamic-css" class="options-output">html, body, .bigger, nav > ul > li > a, input[type="text"], input[type="password"], textarea{font-family:"Open Sans";line-height:25px;font-weight:400;font-style:normal;font-size:15px;}h1, h2, h3, h4, h5, h6, .smaller, .pp-tooltip, #menu-overlay nav > ul > li > a, .showcase-name .sh-name, .sh-view, .slider-projects-nav li span, #filters li a, .item-cat, .item-title, .revealed .item-cat, .carousel-caption .item-cat, .revealed .item-title, .carousel-caption .item-title, .post-title, .meta-categories li a, .entry-meta li, .nav-button p, .reply, input#search, input[type="submit"], .wp-caption-text, .animated-module span, .clapat-button, .clapat-button-full, .more, .clapat-counter .number, .clapat-counter .subject, .p-table-title, .p-table-num, .p-table-num sup, .radial-counter input{font-family:Montserrat;font-weight:700;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="error404 animsition wpb-js-composer js-comp-ver-4.12 vc_responsive">
+
+	<div id="black-fade" class="display-hide"></div>	<!-- Header -->
+    <header class="hidden black negative">
+		<div id="header-container">
+						<!-- Menu Button-->
+			<button class="hamburger hamburger-rotate fullscreen hidden"><span>toggle menu</span></button>
+			<!--/Menu Button-->
+						<div class="page-search secondary-menu">Search</div>
+						<!-- Logo-->
+			<div id="logo">
+				<a class="animation-link" href="../../soho-wordpress">
+					<img class="logo-negative" src="../../soho-wordpress/wp-content/themes/soho/images/logo.png" alt="Light logo">
+					<img class="logo-positive" src="../../soho-wordpress/wp-content/themes/soho/images/logo-black.png" alt="Dark logo">
+				</a>
+			</div>
+			<!--/Logo-->
+			
+		</div>    
+	</header>
+    <!--/Header -->
+	
+		<!-- Menu Overlay -->
+		<div id="menu-overlay">
+			<div class="outer">
+				<div class="inner">
+					<div id="close-menu"></div>
+					<nav class="menu-main-menu-container"><ul id="menu-main-menu" class="main-menu"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11 has-sub"><a>Portfolio</a>
+<ul class="sub-menu">
+	<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-37"><a href="../../soho-wordpress/default.htm" class="animation-link menu-link">Curtain Slides</a></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="../../soho-wordpress/landing/default.htm" class="animation-link menu-link">Landing</a></li>
+	<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="../../soho-wordpress/masonry-grid/default.htm" class="animation-link menu-link">Masonry Grid</a></li>
+	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="../../soho-wordpress/showcase/default.htm" class="animation-link menu-link">Showcase</a></li>
+	<li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../../soho-wordpress/featured-thirds/default.htm" class="animation-link menu-link">Featured Thirds</a></li>
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="../../soho-wordpress/freelancer/default.htm" class="animation-link menu-link">Freelancer</a></li>
+	<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="../../soho-wordpress/carousel-works/default.htm" class="animation-link menu-link">Carousel Works</a></li>
+	<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="../../soho-wordpress/photography/default.htm" class="animation-link menu-link">Photography</a></li>
+</ul>
+</li>
+<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="../../soho-wordpress/about/default.htm" class="animation-link menu-link">About</a></li>
+<li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a href="../../soho-wordpress/news/default.htm" class="animation-link menu-link">News</a></li>
+<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="../../soho-wordpress/elements/default.htm" class="animation-link menu-link">Elements</a></li>
+<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-171 has-sub"><a>Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><a href="../../soho-wordpress/contact/default.htm" class="animation-link menu-link">Default</a></li>
+	<li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="../../soho-wordpress/contact-alternate/default.htm" class="animation-link menu-link">Alternate</a></li>
+</ul>
+</li>
+<li id="menu-item-410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410"><a href="../../soho-wordpress/buy-now/default.htm" class="animation-link menu-link">Buy Now</a></li>
+</ul></nav>						<div class="menu-footer">
+		<p class="copyright">2016 © Soho Wordpres. All rights reserved.</p>
+		<ul class="socials"><li><a href="../../../../https@www.facebook.com/clapat.ro/default.htm" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="../../../../https@twitter.com/clapatdesign" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="../../../../https@www.behance.net/clapat" target="_blank"><i class="fa fa-behance"></i></a></li><li><a href="../../../../https@dribbble.com/ClaPat" target="_blank"><i class="fa fa-dribbble"></i></a></li></ul>	</div>				</div>
+			</div>
+		</div>
+		<!-- Menu Overlay -->		
+	<div id="hero" class="hidden">
+		<div class="clapat-caption animated">
+			<div class="caption-content center-center">
+				<h1 class="big-title">404</h1>
+				<p>The page you are looking for could not be found.</p>
+				<a class="clapat-button" href="../../soho-wordpress">
+					Home Page				</a>
+			</div>
+        </div>
+    </div>
+
+	<!-- Footer -->
+    <footer class="footer-default hidden">
+		<div id="footer-container">
+            <div class="outer">        
+				<div class="inner"> 
+					
+		<p class="copyright">2016 © Soho Wordpres. All rights reserved.</p>
+		<div class="scrolltotop hidden"><span class="holder"></span></div>
+		<div class="icon-scroll-line"></div>
+<ul class="socials-text"><li><a href="../../../../https@www.facebook.com/clapat.ro/default.htm" target="_blank">Facebook</a></li><li><a href="../../../../https@twitter.com/clapatdesign" target="_blank">Twitter</a></li><li><a href="../../../../https@www.behance.net/clapat" target="_blank">Behance</a></li><li><a href="../../../../https@dribbble.com/ClaPat" target="_blank">Dribbble</a></li></ul>						</div>
+			</div>
+		</div>	
+	</footer>
+	<!--/Footer -->
+</div>    
+<!--/Page Content -->
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"../../soho-wordpress/wp-json/contact-form-7/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../soho-wordpress/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='../../soho-wordpress/wp-content/themes/soho/js/plugins.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ClapatSohoThemeOptions = {"enable_preloader":""};
+var ClapatSecondaryMenuOptions = {"filters_open_caption":"Filters","filters_close_caption":"Close","share_open_caption":"Share","share_close_caption":"Close","search_open_caption":"Search","search_close_caption":"Close"};
+var FullScreenSliderOptions = {"slider_direction":"horizontal","slider_speed":"700","slider_loop_top":"1","slider_loop_bottom":"1"};
+var ClapatMapOptions = {"map_marker_image":"../../soho-wordpress/wp-content/themes/soho/images/marker.png","map_address":"43.270441,6.640888","map_zoom":"16","marker_title":"soho","marker_text":"Here we are. Come to drink a coffee!","map_type":"0","map_api_key":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../soho-wordpress/wp-content/themes/soho/js/scripts.js'></script>
+<script type='text/javascript' src='../../soho-wordpress/wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 84/95 objects using disk
+Page Caching using disk: enhanced (Page is 404) 
+
+Served from: clapat.ro @ 2019-05-01 20:19:27 by W3 Total Cache
+-->

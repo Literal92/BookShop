@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--ipt>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-111105160-1', 'auto');
+        ga('send', 'pageview');
+    </scri-->
+
+    <title>Ataranjbar </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Perfect masonry isotope portfolio template. Masonry portfolio examples. Build your portfolio with berger template." />
+    <meta name="keywords" content="masonry portfolio, portfolio design, portfolio template, minimal portfolio, masonry isotope portfolio " />
+    <meta name="author" content="ClaPat Studio">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='../../../fonts.googleapis.com/family=Roboto_3A400,300' rel='stylesheet' type='text/css'>
+    <link href="../../../fonts.googleapis.com/family=Poppins_3A500,600" rel="stylesheet">
+
+</head>
+<body class="hidden">
+    <main>
+        <div class="cd-index cd-main-content">
+            <!-- Page Content -->
+            <div id="page-content" class="" data-bgcolor="#fff" data-textcolor="#000">
+                <div class="page-overlay from-bottom">
+                    <div class="animate-box-bottom"></div>
+                    <div class="animate-box-left"></div>
+                </div>
+
+                <!-- Header -->
+                <header class="scroll-hide">
+                    <div id="header-container">
+
+                        <!-- Logo -->
+                        <div id="logo">
+                            <a class="ajax-link" data-type="page-transition" asp-controller="Home" asp-action="Index">
+                                <img class="black-logo" src="~/images/logo.svg" alt="Logo Black">
+                                <img class="white-logo" src="~/images/logo.svg" alt="Logo White">
+                            </a>
+                        </div>
+                        <!--/Logo -->
+
+                        <a asp-controller="Home" asp-action="Index" class="menu-info">دسته بندی</a>
+
+                        <!--/Menu Burger Dots-->
+                        <!-- Navigation -->
+                        <nav>
+                            <ul data-breakpoint="1024" class="flexnav">
+                                <li><a class="ajax-link" href="about.html" data-type="page-transition">تاریخچه</a></li>
+                                <li><a id="menu-burger-dots">دسته بندی</a></li>
+                                <li><a class="ajax-link" asp-controller="Home" asp-action="Contact" data-type="page-transition">ارتباط با من</a></li>
+                            </ul>
+                        </nav>
+                        <!--/Navigation -->
+                        <!-- Menu Burger -->
+                        <div id="menu-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!--/Menu Burger -->
+
+                    </div>
+                </header>
+                <!--/Header -->
+                @RenderBody();
+            </div>
+        </div>
+</main>
+
+
+    <div class="cd-cover-layer"></div>
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/scripts.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

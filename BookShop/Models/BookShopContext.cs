@@ -13,7 +13,7 @@ namespace BookShop.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(local);Database=BookShopDB;Trusted_Connection=True");
+            optionsBuilder.UseSqlServer(@"Server=.;uid=sa;password=1;Database=BookShopDB;Trusted_Connection=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

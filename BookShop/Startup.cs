@@ -53,7 +53,8 @@ namespace BookShop
 
             });
 
-            services.AddPaging(options=>{
+            services.AddPaging(options =>
+            {
                 options.ViewName = "Bootstrap4";
                 options.HtmlIndicatorDown = "<i class='fa fa-sort-amount-down'></i>";
                 options.HtmlIndicatorUp = "<i class='fa fa-sort-amount-up'></i>";
@@ -84,13 +85,14 @@ namespace BookShop
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-            name: "areas",
-            template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+            //    routes.MapRoute(
+            //name: "areas",
+            //     template: "{area=Admin}/{controller=Books}/{action=Index}/{id?}");
 
-                routes.MapRoute(
-                    name: "default",
-                    template: "{area=Admin}/{controller=Books}/{action=Index}/{id?}");
+            routes.MapRoute(
+                name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }
