@@ -1,4 +1,4 @@
-﻿
+﻿@model BookShop.Models.ViewModels.ContactViewModel
 @{
     ViewData["Title"] = "ارتباط با من";
     Layout = "~/Views/Shared/_LayoutPhoto.cshtml";
@@ -15,8 +15,8 @@
         <div id="hero-styles" class="parallax-onscroll opacity-onscroll">
             <div id="hero-caption">
                 <div class="inner text-align-center">
-                    <div class="hero-subtitle">We challenge you, you challenge us</div>
-                    <div class="hero-title">Tell us about your project idea or just say hello</div>
+                    <div class="hero-subtitle">I challenge you, you challenge me</div>
+                    <div class="hero-title">Tell me about your project idea or just say hello</div>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="container">
 
                 <h4>Let’s talk</h4>
-                <p>For projects or anything else don’t hesitate to get in touch with us. </p>
+                <p>For projects or anything else don’t hesitate to get in touch with me. </p>
 
 
                 <!-- Contact Formular -->
@@ -41,15 +41,17 @@
 
                     <div id="message"></div>
 
-                    <form method="post" action="contact.php" name="contactform" id="contactform">
+                    <form method="post" asp-controller="Home" asp-action="CreateConnect">
                         <div class="name-box">
-                            <input name="name" type="text" id="name" size="30" onfocus="if(this.value == 'Full Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Full Name'; }" value="Full Name"><label class="input_label"></label>
+                            <input name="Name" type="text" id="Name" size="30" onfocus="if(this.value == 'Full Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Full Name'; }" value="Full Name"><label class="input_label"></label>
+                            <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
                         <div class="email-box">
-                            <input name="email" type="text" id="email" size="30" onfocus="if(this.value == 'E-mail') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail"><label class="input_label"></label>
+                            <input name="Email" type="text" id="Email" size="30" onfocus="if(this.value == 'E-mail') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail"><label class="input_label"></label>
                         </div>
                         <div class="message-box">
-                            <textarea name="comments" cols="40" rows="4" id="comments" onfocus="if(this.value == 'Your Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Your Message'; }">Your Message</textarea><label class="input_label slow"></label>
+                            <textarea name="Message" cols="40" rows="4" id="Message" onfocus="if(this.value == 'Your Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Your Message'; }">Your Message</textarea><label class="input_label slow"></label>
+                            <span asp-validation-for="Message" class="text-danger"></span>
                         </div>
                         <div class="submit-box">
                             <input type="submit" class="send_message cillar-button" id="submit" value="Submit" />
@@ -75,7 +77,7 @@
                         <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
                     </div>
 
-                    <h6><a href="mailto:office@tetris.com" class="link"><span>office@tetris.com</span></a></h6>
+                    <h6><a href="mailto:ata.ranjbarz@gmail.com?Subject=Hello" class="link"><span>ata.ranjbarz@gmail.com</span></a></h6>
                     <p>Email</p>
                 </div>
 
@@ -84,7 +86,7 @@
                         <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                     </div>
 
-                    <h6>35 M St, New York, 105, USA</h6>
+                    <h6>No 6. Corner Hafez 5. Hafez Street. Quchan. Iran</h6>
                     <p>Address</p>
                 </div>
 
@@ -93,7 +95,7 @@
                         <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
                     </div>
 
-                    <h6>0040 (7763) 574-8901</h6>
+                    <h6>+98 937 505 3799</h6>
                     <p>Phone</p>
                 </div>
 
@@ -107,44 +109,3 @@
     <!--/Main Content -->
 </div>
 <!--/Main -->
-<!-- Footer -->
-<footer class="hidden">
-
-
-    <a id="page-action-holder" class="ajax-link" href="index.html" data-type="page-transition" data-tooltip="Back to Works" data-placement="top">
-        <div id="backtoworks">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 80 80" xml:space="preserve">
-            <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
-
-
-
-            <circle class="circle-action is-outer" cx="40" cy="40" r="36" />
-
-
-
-                    </svg>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-    </a>
-
-    <ul class="socials-text has-animation" data-delay="0">
-        <li><a href="../../../www.facebook.com/clapat" target="_blank">Facebook</a></li>
-        <li><a href="../../../www.twitter.com/clapatdesign" target="_blank">Twitter</a></li>
-        <li><a href="../../../www.dribbble.com/clapat" target="_blank">Dribbble</a></li>
-        <li><a href="../../../www.behance.net/clapat" target="_blank">Behance</a></li>
-    </ul>
-
-
-    <div class="progress-page">
-        <div class="scrolltotop is-active is-visible" data-tooltip="Back to Top" data-placement="top">
-            <div class="arrow-top"></div>
-            <div class="arrow-top-line"></div>
-        </div>
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-
-</footer>
-<!--/Footer -->

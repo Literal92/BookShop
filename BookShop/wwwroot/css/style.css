@@ -30,14 +30,55 @@ Primary use:	Showcase Portfolio
 ---------------------------------------------------*/
 @font-face {
     font-family: Vazir;
-    src: url(fonts/Vazir.eot);
-    src: url(fonts/Vazir.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir.woff) format("woff"), url(fonts/Vazir.ttf) format("truetype"), url(fonts/Vazir.woff2) format('woff');
+    src: url(fonts/Vazir-Black-FD.eot);
+    src: url(fonts/Vazir-Black-FD.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir-Black-FD.woff) format("woff"), url(fonts/Vazir-Black-FD.ttf) format("truetype"), url(fonts/Vazir-Black-FD.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(fonts/Vazir-Bold-FD.eot);
+    src: url(fonts/Vazir-Bold-FD.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir-Bold-FD.woff) format("woff"), url(fonts/Vazir-Bold-FD.ttf) format("truetype"), url(fonts/Vazir-Bold-FD.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(fonts/Vazir-FD.eot);
+    src: url(fonts/Vazir-FD.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir-FD.woff) format("woff"), url(fonts/Vazir-FD.ttf) format("truetype"), url(fonts/Vazir-FD.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(fonts/Vazir-Light-FD.eot);
+    src: url(fonts/Vazir-Light-FD.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir-Light-FD.woff) format("woff"), url(fonts/Vazir-Light-FD.ttf) format("truetype"), url(fonts/Vazir-Light-FD.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(fonts/Vazir-Medium-FD.eot);
+    src: url(fonts/Vazir-Medium-FD.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir-Medium-FD.woff) format("woff"), url(fonts/Vazir-Medium-FD.ttf) format("truetype"), url(fonts/Vazir-Medium-FD.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(fonts/Vazir-Thin-FD.eot);
+    src: url(fonts/Vazir-Thin-FD.eot?#iefix) format("embedded-opentype"), url(fonts/Vazir-Thin-FD.woff) format("woff"), url(fonts/Vazir-Thin-FD.ttf) format("truetype"), url(fonts/Vazir-Thin-FD.woff2) format('woff2');
     font-weight: normal;
     font-style: normal
 }
 	
+
 	html,body{
-		font-family: 'Vazir', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		font-size:16px;
 		height:100%;
@@ -413,7 +454,7 @@ Primary use:	Showcase Portfolio
 		
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
-		font-family: Vazir, sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color:#000;
 		margin-bottom:10px;
 	}
@@ -460,7 +501,26 @@ Primary use:	Showcase Portfolio
 		font-size:14px;
 		line-height: 18px;
 	}
-	
+
+.under-line-title{
+    border-bottom: 1px solid #cacaca !important;
+    margin-top:25px;
+}
+
+.inhirit-once {
+    padding-left: 2rem;
+    color: #333333;
+}
+.inhirit-double {
+    padding-left: 4rem;
+    color: #333333;
+}
+
+.project-text {
+    text-align: center;
+    color: #333333;
+}
+
 	.col-content.light-content h1, .col-content.light-content h2, .col-content.light-content h3, .col-content.light-content h4, .col-content.light-content h5, .col-content.light-content h6 {
 		color: #fff!important;
 	}
@@ -514,7 +574,12 @@ Primary use:	Showcase Portfolio
 		color:#777;
 		text-transform:uppercase;
 	}
-	
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
 	.container {
 		max-width:1580px;
 		width:100%;
@@ -620,13 +685,26 @@ Primary use:	Showcase Portfolio
 		margin-right: 4%;
 		position: relative;
 	}
-	
-	.one_half {
-		float: left;
-		margin-bottom: 20px;
-		margin-right: 6%;
-		position: relative;
-	}
+
+.footer-copyright {
+    margin: 4px;
+    font-size: smaller;
+}
+.footer-copyright a {
+    color: #fff;
+}
+
+.footer-copyright a:hover {
+    color: #000;
+}
+
+.one_half {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 25%;
+    margin-left: 25%;
+    position: relative;
+}
 
 	.last {
 		margin-right:0px;
@@ -917,7 +995,7 @@ Primary use:	Showcase Portfolio
 		position:relative;
 		border-left: medium none;
 		font-weight: 500;
-		font-family: Vazir, sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color:#000;		
 		font-size:14px;
 		-webkit-transition: all 0.3s ease-in-out;
@@ -1130,7 +1208,7 @@ Primary use:	Showcase Portfolio
 		pointer-events: none;
 		font-size: 14px;
 		font-weight: 500;
-		font-family: 'vazir', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color: #000;
 		opacity:0;
 		visibility:hidden;
@@ -1148,7 +1226,19 @@ Primary use:	Showcase Portfolio
 	}
 	
 	#menu-burger-dots {
+		width: 24px;
+		height: 40px;
+		float: right;
+		box-sizing: border-box;
+		padding: 8px 0;
+		margin-left: 60px;
 		cursor:pointer;
+		-webkit-transition: 0.1s ease-in-out;
+		transition: 0.1s ease-in-out;
+	}
+	
+	#menu-burger-dots:hover {
+		padding:4px 0;
 	}
 	
 	#menu-burger-dots span {
@@ -1290,7 +1380,7 @@ Primary use:	Showcase Portfolio
 	
 	.showcase-list li {
 		font-weight: 600;
-		font-family: 'vazir', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-size: 36px;
 		line-height: 48px;
 		list-style: none;
@@ -1430,7 +1520,7 @@ Primary use:	Showcase Portfolio
 	.hero-title {
 		font-size: 48px;
 		font-weight: 600;
-		font-family: 'vazir', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color:#000;
 		position:relative;
 		z-index:10;
@@ -1649,7 +1739,7 @@ Primary use:	Showcase Portfolio
 		color: #000;		
 		font-size:14px;
 		font-weight: 500;
-		font-family: 'vazir', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		display: block;
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
@@ -2178,6 +2268,7 @@ Primary use:	Showcase Portfolio
 	.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
 		margin-bottom: 20px;
 		margin-right: 0%;
+        float:right;
 	}
 	
 	.socials-text li {

@@ -80,4 +80,14 @@ namespace BookShop.Models
         public List<Category> categories { get; set; }
         public List<Book_Category> book_Categories { get; set; }
     }
+
+    public class ContactMe
+    {
+        [Key]
+        public int ContactId { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Message { get; set; }
+        public DateTime DateCreate { get; set; }
+    }
 }

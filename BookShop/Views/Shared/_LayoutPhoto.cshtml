@@ -22,8 +22,9 @@
     <link rel="icon" type="image/ico" href="favicon.ico" />
     <link href="~/css/style.css" rel="stylesheet" />
     <link href="~/css/font-awesome.min.css" rel="stylesheet" />
-    <link href='../../../fonts.googleapis.com/family=Roboto_3A400,300' rel='stylesheet' type='text/css'>
-    <link href="../../../fonts.googleapis.com/family=Poppins_3A500,600" rel="stylesheet">
+    <link href='https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyC14zbJhWg7PGXUqwjHGfSxfKKRB6T9ABk' rel='stylesheet' type='text/css'>
+    
+
 
 </head>
 <body class="hidden">
@@ -55,9 +56,9 @@
                         <!-- Navigation -->
                         <nav>
                             <ul data-breakpoint="1024" class="flexnav">
-                                <li><a class="ajax-link" href="about.html" data-type="page-transition">تاریخچه</a></li>
-                                <li><a id="menu-burger-dots">دسته بندی</a></li>
-                                <li><a class="ajax-link" asp-controller="Home" asp-action="Contact" data-type="page-transition">ارتباط با من</a></li>
+                                <li><a class="ajax-link" asp-controller="Home" asp-action="Biography" data-type="page-transition">Biography</a></li>
+                                <li><a class="ajax-link" asp-controller="Home" asp-action="Photos" data-type="page-transition">Photos</a></li>
+                                <li><a class="ajax-link" asp-controller="Home" asp-action="Contact" data-type="page-transition">Connect Me</a></li>
                             </ul>
                         </nav>
                         <!--/Navigation -->
@@ -71,12 +72,80 @@
                         <!--/Menu Burger -->
 
                     </div>
+                    <input value="Reset" onclick="window.location.reload()" type="hidden">
+
                 </header>
                 <!--/Header -->
-                @RenderBody();
+                @RenderBody()
+                <!-- Footer -->
+                <footer class="hidden">
+
+
+                    <a id="page-action-holder" class="ajax-link" asp-controller="Home" asp-action="Index" data-type="page-transition" data-tooltip="Back to Home" data-placement="top">
+                        <div id="backtoworks">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 80 80" xml:space="preserve">
+                            <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <circle class="circle-action is-outer" cx="40" cy="40" r="36" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </svg>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <ul class="socials-text has-animation" data-delay="10">
+                        <li><a href="https://t.me/Photojournalist1" target="_blank">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/ata_ranjbar_zeydanlou/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/ata.ranjbarzidanlo" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/ata_ranjbar" target="_blank">Twitter</a></li>
+                    </ul>
+
+
+                    <div class="progress-page">
+                        <div class="scrolltotop is-active is-visible" data-tooltip="Back to Top" data-placement="top">
+                            <div class="arrow-top"></div>
+                            <div class="arrow-top-line"></div>
+                        </div>
+                        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                        </svg>
+                    </div>
+
+
+                </footer>
+                <!--/Footer -->
             </div>
         </div>
-</main>
+        <p class="footer-copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">Tavakoli</a>. Design by <a target="_blank" href="../../../https@www.clapat.com/default.htm">Zahmati</a>.</p>
+
+    </main>
 
 
     <div class="cd-cover-layer"></div>

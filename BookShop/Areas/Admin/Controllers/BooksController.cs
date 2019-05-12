@@ -24,7 +24,7 @@ namespace BookShop.Areas.Admin.Controllers
             _repository = repository;
         }
 
-        public IActionResult Index(int page = 1, int row = 5, string sortExpression = "Title", string title = "")
+        public IActionResult Index(int page = 1, int row = 5, string sortExpression = "Name", string title = "")
         {
             title = String.IsNullOrEmpty(title) ? "" : title;
             List<int> Rows = new List<int>
@@ -36,18 +36,30 @@ namespace BookShop.Areas.Admin.Controllers
             ViewBag.NumOfRow = (page - 1) * row + 1;
             ViewBag.Search = title;
 
-            //var PagingModel = PagingList.Create(_repository.GetAllBooks(title), row, page, sortExpression, "Title");
-            //PagingModel.RouteValue = new RouteValueDictionary
-            //{
-            //    {"row",row},
-            //    {"title",title }
-            //};
+            var connect = _context.ContactMes.Select(x => new ContactViewModel
+            {
+                Name = x.Name,
+                Message = x.Message,
+                Email = x.Email,
+                DateCreate = x.DateCreate,
+                ContactId = x.ContactId
+            }).ToList();
 
-            ViewBag.Categories = _repository.GetAllCategories();
-            ViewBag.LanguageID = new SelectList(_context.Languages, "LanguageName", "LanguageName");
-            ViewBag.PublisherID = new SelectList(_context.Publishers, "PublisherName", "PublisherName");
+            var PagingModel = PagingList.Create(connect, row, page, sortExpression, "Neme");
+            PagingModel.RouteValue = new RouteValueDictionary
+            {
+                {"row",row},
+                {"title",title }
+            };
 
-            return View();
+          
+
+            //ViewBag.Categories = _repository.GetAllCategories();
+            //ViewBag.LanguageID = new SelectList(_context.Languages, "LanguageName", "LanguageName");
+            //ViewBag.PublisherID = new SelectList(_context.Publishers, "PublisherName", "PublisherName");
+            ViewBag.ConnectMe = _context.ContactMes.ToList();
+
+            return View(PagingModel);
         }
 
 
