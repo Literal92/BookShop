@@ -25,7 +25,7 @@ namespace BookShop.Controllers
         public IActionResult Project()
         {
 
-            return PartialView("_Project");
+            return View();
         }
 
         public IActionResult Contact()

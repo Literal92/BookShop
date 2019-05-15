@@ -1681,7 +1681,7 @@ Primary use:	Showcase Portfolio
 ---------------------------------------------------*/		
 	
 	footer {
-		position:relative;
+		position:sticky;
 		padding:70px 0 110px 0;
 		width:100%;
 		height:auto;
