@@ -1689,6 +1689,7 @@ footer {
     height: auto;
     z-index: 5;
     direction: ltr;
+    margin-top:8rem;
 }
 
 .socials-text {

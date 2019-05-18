@@ -323,6 +323,9 @@ function AjaxLoad() {
         function loadNewContent(url, bool) {
             url = ('' == url) ? 'index.html' : url;
 
+            window.history.pushState("object or string", "Title", url);
+            window.location.reload();
+
             var section = $('<div class="cd-main-content "></div>');
 
 
