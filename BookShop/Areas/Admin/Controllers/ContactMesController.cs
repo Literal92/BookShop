@@ -142,7 +142,7 @@ namespace BookShop.Areas.Admin.Controllers
             var contactMe = await _context.ContactMes.FindAsync(id);
             _context.ContactMes.Remove(contactMe);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Admin/Books/Index");
         }
 
         private bool ContactMeExists(int id)

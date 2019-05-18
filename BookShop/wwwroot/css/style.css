@@ -18,7 +18,7 @@ Primary use:	Showcase Portfolio
 03. Header Elements
 04. Overlay Menu
 05. Hero Section
-06. Main Content 
+60. Main Content 
 07. Footer Elements
 08. Responsive Media Querries
 
@@ -75,7 +75,6 @@ Primary use:	Showcase Portfolio
     font-weight: normal;
     font-style: normal
 }
-	
 
 	html,body{
 		font-family: 'Roboto', sans-serif;
@@ -1624,7 +1623,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 /*--------------------------------------------------
-	06. Main Content
+	60. Main Content
 ---------------------------------------------------*/		
 	
 	#main {

@@ -15,12 +15,12 @@
     <title>Ataranjbar </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is Ata ranjbar.Graduate news photography." />
-    <meta name="keywords" content="masonry portfolio, portfolio design, minimal portfolio, masonry isotope portfolio " />
+    <meta name="keywords" content="masonry portfolio, portfolio design, minimal portfolio, masonry isotope portfolio, photography, news " />
     <meta name="author" content="ClaPat Studio">
     <meta charset="UTF-8" />
 
     <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link href="~/css/style.css" rel="stylesheet" />
+    <link href='@Url.Content("~/css/style.css")' rel='stylesheet' type='text/css'/>
     <link href="~/css/font-awesome.min.css" rel="stylesheet" />
     <link href='https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyC14zbJhWg7PGXUqwjHGfSxfKKRB6T9ABk' rel='stylesheet' type='text/css'>
     
@@ -49,9 +49,12 @@
                             </a>
                         </div>
                         <!--/Logo -->
-
-                        <a asp-controller="Home" asp-action="Index" class="menu-info">دسته بندی</a>
-
+                        <!-- Menu Burger Dots -->
+                        <div id="menu-burger-dots">
+                            <div class=" is-active is-visible">
+                                <div ><img src="~/images/En.svg"/></div>
+                            </div>
+                        </div>
                         <!--/Menu Burger Dots-->
                         <!-- Navigation -->
                         <nav>
@@ -62,6 +65,7 @@
                             </ul>
                         </nav>
                         <!--/Navigation -->
+
                         <!-- Menu Burger -->
                         <div id="menu-burger">
                             <span></span>
@@ -76,6 +80,41 @@
 
                 </header>
                 <!--/Header -->
+                <!-- Menu Overlay -->
+                <div id="menu-overlay">
+
+                    <div class="outer">
+                        <div class="inner">
+
+                            <div id="close-menu"></div>
+
+                            <!-- Showcase Gallery -->
+                            <div id="showcase-gallery">
+                                <div class="showcase-img" data-aux="project-01"><img src="~/images/Fa.jpg" alt="Image"></div>
+                                <div class="showcase-img" data-aux="project-02"><img src="~/images/En.jpg" alt="Image"></div>
+                            </div>
+                            <!--/Showcase Gallery -->
+                            <!-- Showcase List -->
+                            <div id="showcase">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <ul class="showcase-list">
+                                            <li><a class="ajax-link" asp-controller="fa" asp-action="index" data-type="page-transition" data-aux="project-01" style="font-family:vazir;">فارسی</a></li>
+                                            <li><a class="ajax-link" asp-controller="home" asp-action="index" data-type="page-transition" data-aux="project-02">English</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Showcase List -->
+
+                            <p class="copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">Tavakoli</a>. Design by <a target="_blank" href="#">Zahmati</a>.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Menu Overlay -->
+
                 @RenderBody()
                 <!-- Footer -->
                 <footer class="hidden">
@@ -84,38 +123,8 @@
                     <a id="page-action-holder" class="ajax-link" asp-controller="Home" asp-action="Index" data-type="page-transition" data-tooltip="Back to Home" data-placement="top">
                         <div id="backtoworks">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 80 80" xml:space="preserve">
-                            <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <circle class="circle-action is-outer" cx="40" cy="40" r="36" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
+                                <circle class="circle-action is-outer" cx="40" cy="40" r="36" />
                             </svg>
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
@@ -143,7 +152,6 @@
                 <!--/Footer -->
             </div>
         </div>
-        <p class="footer-copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">Tavakoli</a>. Design by <a target="_blank" href="../../../https@www.clapat.com/default.htm">Zahmati</a>.</p>
 
     </main>
 

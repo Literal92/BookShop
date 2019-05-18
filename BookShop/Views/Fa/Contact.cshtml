@@ -1,0 +1,109 @@
+﻿@model BookShop.Models.ViewModels.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_LayoutFa.cshtml";
+}
+
+
+<!-- Main -->
+<div id="main">
+
+
+    <!-- Hero Section -->
+    <div id="hero">
+        <div id="hero-styles" class="parallax-onscroll opacity-onscroll">
+            <div id="hero-caption">
+                <div class="inner text-align-center">
+                    <div class="hero-title">ارتباط با من</div>
+                    <div class="hero-subtitle">برای پروژه ها یا هر چیز دیگری با من تماس بگیرید.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hero-height" class="hidden"></div>
+    <!--/Hero Section -->
+    <!-- Main Content -->
+    <div id="main-content">
+
+
+        <!-- Row -->
+        <div class="vc_row small text-align-center row_padding_top">
+
+            <div class="container">
+
+
+
+                <!-- Contact Formular -->
+                <div id="contact-formular">
+
+                    <div id="message"></div>
+
+                    <form method="post" asp-controller="Home" asp-action="CreateConnect">
+                        <div class="name-box">
+                            <input name="Name" type="text" id="Name" size="30" onfocus="if(this.value == 'نام') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'نام'; }" value="نام"><label class="input_label"></label>
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="email-box">
+                            <input name="Email" type="text" id="Email" size="30" onfocus="if(this.value == 'آدرس ایمیل') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'آدرس ایمیل'; }" value="آدرس ایمیل"><label class="input_label"></label>
+                        </div>
+                        <div class="message-box">
+                            <textarea name="Message" cols="40" rows="4" id="Message" onfocus="if(this.value == 'پیام ') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'پیام '; }">پیام </textarea><label class="input_label slow"></label>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                        <div class="submit-box">
+                            <input type="submit" class="send_message cillar-button" id="submit" value="ارسال" />
+                        </div>
+                    </form>
+
+                </div>
+                <!--/Contact Formular -->
+
+                <hr><hr>
+
+            </div>
+
+        </div>
+        <!--/Row -->
+        <!-- Row -->
+        <div class="vc_row text-align-center row_padding_top row_padding_bottom small has-animation" data-delay="0">
+
+            <div class="container">
+
+                <div class="one_third">
+                    <div class="clapat-icon">
+                        <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+                    </div>
+
+                    <h6><a href="mailto:ata.ranjbarz@gmail.com?Subject=Hello" class="link"><span>ata.ranjbarz@gmail.com</span></a></h6>
+                    <p>ایمیل</p>
+                </div>
+
+                <div class="one_third">
+                    <div class="clapat-icon">
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                    </div>
+
+                    <h6>ایران، قوچان، خیابان حافظ، نبش حافظ 5 ، پلاک 6</h6>
+                    <p>آدرس</p>
+                </div>
+
+                <div class=" one_third last">
+                    <div class="clapat-icon">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    </div>
+
+                    <h6>09375053799</h6>
+                    <p>شماره تماس</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!--/Row -->
+
+
+    </div>
+    <!--/Main Content -->
+</div>
+<!--/Main -->

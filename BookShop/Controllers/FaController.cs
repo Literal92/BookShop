@@ -12,5 +12,25 @@ namespace BookShop.Controllers
         {
             return View();
         }
+
+        public IActionResult Biography()
+        {
+            return View();
+        }
+        public IActionResult Photos()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Project()
+        {
+
+            return View();
+        }
     }
 }

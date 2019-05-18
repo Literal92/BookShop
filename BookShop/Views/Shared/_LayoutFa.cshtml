@@ -14,20 +14,20 @@
 
     <title>Ataranjbar </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is Ata ranjbar.Graduate news photography." />
-    <meta name="keywords" content="masonry portfolio, portfolio design, minimal portfolio, masonry isotope portfolio " />
+    <meta name="description" content="عکاس حرفه ای عطا رنجبر زیدانلو " />
+    <meta name="keywords" content="masonry portfolio, portfolio design, minimal portfolio, masonry isotope portfolio, عکاسی, اخبار, حرفه ای, عکس " />
     <meta name="author" content="ClaPat Studio">
     <meta charset="UTF-8" />
 
     <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="@Url.Content("~/css/StyleFa.css")" rel="stylesheet" />
     <link href="~/css/font-awesome.min.css" rel="stylesheet" />
     <link href='https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyC14zbJhWg7PGXUqwjHGfSxfKKRB6T9ABk' rel='stylesheet' type='text/css'>
 
 
 
 </head>
-<body class="hidden" style="direction:rtl;">
+<body class="hidden">
     <main>
         <div class="cd-index cd-main-content">
             <!-- Page Content -->
@@ -43,22 +43,25 @@
 
                         <!-- Logo -->
                         <div id="logo">
-                            <a class="ajax-link" data-type="page-transition" asp-controller="Home" asp-action="Index">
+                            <a class="ajax-link" data-type="page-transition" asp-controller="fa" asp-action="Index">
                                 <img class="black-logo" src="~/images/logo.svg" alt="Logo Black">
                                 <img class="white-logo" src="~/images/logo.svg" alt="Logo White">
                             </a>
                         </div>
                         <!--/Logo -->
-
-                        <a asp-controller="Home" asp-action="Index" class="menu-info">دسته بندی</a>
-
+                        <!-- Menu Burger Dots -->
+                        <div id="menu-burger-dots">
+                            <div class=" is-active is-visible">
+                                <div><img src="~/images/Fa.svg" /></div>
+                            </div>
+                        </div>
                         <!--/Menu Burger Dots-->
                         <!-- Navigation -->
                         <nav>
-                            <ul data-breakpoint="1024" class="flexnav"> 
-                                <li><a class="ajax-link"  asp-controller="Home" style="font-family:vazir" asp-action="Biography" data-type="page-transition">بیوگرافی</a></li>
-                                <li><a class="ajax-link" asp-controller="Home" style="font-family:vazir" asp-action="Photos" data-type="page-transition">آثار</a></li>
-                                <li><a class="ajax-link" asp-controller="Home" style="font-family:vazir; font-weight:bold" asp-action="Contact" data-type="page-transition">ارتباط با من</a></li>
+                            <ul data-breakpoint="1024" class="flexnav">
+                                <li><a class="ajax-link" asp-controller="fa" asp-action="Biography" data-type="page-transition">بیوگرافی</a></li>
+                                <li><a class="ajax-link" asp-controller="fa" asp-action="Photos" data-type="page-transition">آثار</a></li>
+                                <li><a class="ajax-link" asp-controller="fa" asp-action="Contact" data-type="page-transition">ارتباط با من</a></li>
                             </ul>
                         </nav>
                         <!--/Navigation -->
@@ -76,15 +79,81 @@
 
                 </header>
                 <!--/Header -->
+                <!-- Menu Overlay -->
+                <div id="menu-overlay">
+
+                    <div class="outer">
+                        <div class="inner">
+
+                            <div id="close-menu"></div>
+
+                            <!-- Showcase Gallery -->
+                            <div id="showcase-gallery">
+                                <div class="showcase-img" data-aux="project-01"><img src="~/images/Fa.jpg" alt="Image"></div>
+                                <div class="showcase-img" data-aux="project-02"><img src="~/images/En.jpg" alt="Image"></div>
+                            </div>
+                            <!--/Showcase Gallery -->
+                            <!-- Showcase List -->
+                            <div id="showcase">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <ul class="showcase-list">
+                                            <li><a asp-controller="fa" asp-action="index" class="ajax-link" data-type="page-transition" data-aux="project-01">فارسی</a></li>
+                                            <li><a asp-controller="home" asp-action="index" class="ajax-link" data-type="page-transition" data-aux="project-02" style="font-family:Roboto;">English</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Showcase List -->
+
+                            <p class="copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">توکلی</a>. طراحی <a target="_blank" href="#">زحمتی</a>.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Menu Overlay -->
                 @RenderBody()
                 <!-- Footer -->
                 <footer class="hidden">
 
 
-                    <a id="page-action-holder" class="ajax-link" asp-controller="Home" asp-action="Index" data-type="page-transition" data-tooltip="Back to Home" data-placement="top">
+                    <a id="page-action-holder" class="ajax-link" asp-controller="fa" asp-action="index" data-type="page-transition" data-tooltip="Back to Home" data-placement="top">
                         <div id="backtoworks">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 80 80" xml:space="preserve">
                             <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,6 +217,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </svg>
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
@@ -175,7 +276,6 @@
                 <!--/Footer -->
             </div>
         </div>
-        <p class="footer-copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">Tavakoli</a>. Design by <a target="_blank" href="../../../https@www.clapat.com/default.htm">Zahmati</a>.</p>
 
     </main>
 
