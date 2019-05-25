@@ -59,9 +59,10 @@
                         <!-- Navigation -->
                         <nav>
                             <ul data-breakpoint="1024" class="flexnav">
-                                <li><a class="ajax-link" asp-controller="fa" asp-action="Biography" data-type="page-transition">بیوگرافی</a></li>
-                                <li><a class="ajax-link" asp-controller="fa" asp-action="Photos" data-type="page-transition">آثار</a></li>
                                 <li><a class="ajax-link" asp-controller="fa" asp-action="Contact" data-type="page-transition">ارتباط با من</a></li>
+                                <li><a class="ajax-link" asp-controller="fa" asp-action="Photos" data-type="page-transition">آثار</a></li>
+                                <li><a class="ajax-link" href="#" data-type="page-transition">بیوگرافی</a></li>
+
                             </ul>
                         </nav>
                         <!--/Navigation -->
@@ -87,27 +88,20 @@
 
                             <div id="close-menu"></div>
 
-                            <!-- Showcase Gallery -->
-                            <div id="showcase-gallery">
-                                <div class="showcase-img" data-aux="project-01"><img src="~/images/Fa.jpg" alt="Image"></div>
-                                <div class="showcase-img" data-aux="project-02"><img src="~/images/En.jpg" alt="Image"></div>
-                            </div>
-                            <!--/Showcase Gallery -->
+
                             <!-- Showcase List -->
                             <div id="showcase">
                                 <div class="outer">
                                     <div class="inner">
                                         <ul class="showcase-list">
                                             <li><a asp-controller="fa" asp-action="index" class="ajax-link" data-type="page-transition" data-aux="project-01">فارسی</a></li>
-                                            <li><a asp-controller="home" asp-action="index" class="ajax-link" data-type="page-transition" data-aux="project-02" style="font-family:Roboto;">English</a></li>
+                                            <li><a asp-controller="home" asp-action="index" class="ajax-link" data-type="page-transition" data-aux="project-02" >English</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <!--/Showcase List -->
-
-                            <p class="copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">توکلی</a>. طراحی <a target="_blank" href="#">زحمتی</a>.</p>
-
+                            <p class="copyright">@DateTime.Now.Year © <a target="_blank" href="https://www.linkedin.com/in/amir-mohammad-tavakkoli-4a3302b1/">Tavakoli</a>. Design by <a target="_blank" href="https://www.linkedin.com/in/mohammad-zahmati">Zahmati</a>.</p>
                         </div>
                     </div>
 

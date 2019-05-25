@@ -1521,7 +1521,7 @@ header.open .menu-info {
 
 .hero-title {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: bold;
     font-family: 'Vazir', sans-serif;
     color: #000;
     position: relative;
@@ -2042,7 +2042,7 @@ footer {
     #menu-burger-dots {
         float: none;
         margin-left: 0;
-        right: 90px;
+        left: 120px;
         position: absolute;
         top: 20px;
     }
@@ -2290,7 +2290,7 @@ footer {
     }
 
     #menu-burger-dots {
-        left: 70px;
+        left: 50px;
     }
 
     #menu-burger {
