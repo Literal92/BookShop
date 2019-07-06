@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BookShop.Migrations
 {
-    public partial class initialphoto : Migration
+    public partial class initialPhoto : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,6 +15,11 @@ namespace BookShop.Migrations
                     CategoryID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     CategoryName = table.Column<string>(nullable: true),
+                    Detailes = table.Column<string>(nullable: true),
+                    File = table.Column<string>(nullable: true),
+                    IsPublish = table.Column<bool>(nullable: true),
+                    Delete = table.Column<bool>(nullable: true, defaultValueSql: "0"),
+                    PublishDate = table.Column<DateTime>(nullable: true),
                     ParentCategoryID = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -76,17 +81,9 @@ namespace BookShop.Migrations
                 {
                     BookID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Title = table.Column<string>(nullable: false),
-                    Summary = table.Column<string>(nullable: true),
-                    Price = table.Column<int>(nullable: false),
-                    Stock = table.Column<int>(nullable: false),
+                    Caption = table.Column<string>(nullable: false),
                     File = table.Column<string>(nullable: true),
-                    Weight = table.Column<short>(nullable: false),
-                    ISBN = table.Column<string>(nullable: true),
-                    IsPublish = table.Column<bool>(nullable: true),
-                    PublishDate = table.Column<DateTime>(nullable: true),
                     PublishYear = table.Column<int>(nullable: false),
-                    Delete = table.Column<bool>(nullable: true, defaultValueSql: "0"),
                     PublisherID = table.Column<int>(nullable: false),
                     Image = table.Column<byte[]>(type: "image", nullable: true),
                     LanguageID = table.Column<int>(nullable: false)

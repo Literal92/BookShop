@@ -24,7 +24,11 @@ namespace BookShop.Controllers
         [HttpGet]
         public IActionResult Project()
         {
+            return View();
+        }
 
+        public IActionResult Project2()
+        {
             return View();
         }
 

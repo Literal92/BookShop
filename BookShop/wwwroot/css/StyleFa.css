@@ -1522,7 +1522,7 @@ header.open .menu-info {
 .hero-title {
     font-size: 48px;
     font-weight: bold;
-    font-family: 'Vazir', sans-serif;
+    font-family: 'Vazir';
     color: #000;
     position: relative;
     z-index: 10;

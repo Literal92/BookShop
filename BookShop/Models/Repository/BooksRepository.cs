@@ -13,30 +13,9 @@ namespace BookShop.Models.Repository
         }
 
 
-        public List<TreeViewCategory> GetAllCategories()
-        {
-            //var Categories = (from c in _context.Categories
-            //                  where (c.ParentCategoryID == null)
-            //                  select new TreeViewCategory { id = c.CategoryID, title = c.CategoryName }).ToList();
-            //foreach (var item in Categories)
-            //{
-            //    BindSubCategories(item);
-            //}
+       
 
-            return null;
-        }
-
-        public void BindSubCategories(TreeViewCategory category)
-        {
-            var SubCategories = (from c in _context.Categories
-                                 where (c.ParentCategoryID == category.id)
-                                 select new TreeViewCategory { id = c.CategoryID, title = c.CategoryName }).ToList();
-            foreach (var item in SubCategories)
-            {
-                BindSubCategories(item);
-                category.subs.Add(item);
-            }
-        }
+       
 
         public List<BooksIndexViewModel> GetAllBooks(string title)
         {

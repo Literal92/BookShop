@@ -63,27 +63,46 @@ namespace BookShop.Areas.Admin.Controllers
         }
 
 
-        public IActionResult AdvancedSearch(BooksAdvancedSearch ViewModel)
-        {
-            ViewModel.Title = String.IsNullOrEmpty(ViewModel.Title) ? "" : ViewModel.Title;
-            ViewModel.ISBN = String.IsNullOrEmpty(ViewModel.ISBN) ? "" : ViewModel.ISBN;
-            ViewModel.Publisher = String.IsNullOrEmpty(ViewModel.Publisher) ? "" : ViewModel.Publisher;
-            ViewModel.Author = String.IsNullOrEmpty(ViewModel.Author) ? "" : ViewModel.Author;
-            ViewModel.Translator = String.IsNullOrEmpty(ViewModel.Translator) ? "" : ViewModel.Translator;
-            ViewModel.Category = String.IsNullOrEmpty(ViewModel.Category) ? "" : ViewModel.Category;
-            ViewModel.Language = String.IsNullOrEmpty(ViewModel.Language) ? "" : ViewModel.Language;
-            var Books = _repository.GetAllBooks(ViewModel.Title);
-            return View(Books);
-        }
-
         public IActionResult Create()
         {
             ViewBag.LanguageID = new SelectList(_context.Languages, "LanguageID", "LanguageName");
             ViewBag.PublisherID = new SelectList(_context.Publishers, "PublisherID", "PublisherName");
 
-            BooksSubCategoriesViewModel SubCategoriesVM = new BooksSubCategoriesViewModel(_repository.GetAllCategories(),null);
-            BooksCreateEditViewModel ViewModel = new BooksCreateEditViewModel(SubCategoriesVM);
-            return View(ViewModel);
+            return View();
+        }
+
+        public async Task<IActionResult> CreatePhoto()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreatePhoto(CategoryViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                DateTime? PublishDate = null;
+                if (viewModel.IsPublish == true)
+                {
+                    PublishDate = DateTime.Now;
+                }
+
+
+                Category category = new Category()
+                {
+                    Delete = false,
+                    CategoryName = viewModel.title,
+                    IsPublish = viewModel.IsPublish,
+                    Detailes = viewModel.Detailes,
+                    PublishDate = PublishDate,
+                    File = viewModel.File,
+                };
+                await _context.Categories.AddAsync(category);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("CreatePhoto");
+            }
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
@@ -96,25 +115,14 @@ namespace BookShop.Areas.Admin.Controllers
                 if (ViewModel.CategoryID != null)
                     categories = ViewModel.CategoryID.Select(a => new Book_Category { CategoryID = a }).ToList();
 
-                DateTime? PublishDate = null;
+               
 
-                if (ViewModel.IsPublish == true)
-                {
-                    PublishDate = DateTime.Now;
-                }
+               
                 Book book = new Book()
                 {
                     //Delete = false,
-                    ISBN = ViewModel.ISBN,
-                    IsPublish = ViewModel.IsPublish,
-                    Stock = ViewModel.Stock,
-                    Price = ViewModel.Price,
                     LanguageID = ViewModel.LanguageID,
-                    Summary = ViewModel.Summary,
-                    Title = ViewModel.Title,
                     PublishYear = ViewModel.PublishYear,
-                    PublishDate = PublishDate,
-                    Weight = ViewModel.Weight,
                     PublisherID = ViewModel.PublisherID,
                     book_Categories = categories,
                 };
@@ -127,7 +135,6 @@ namespace BookShop.Areas.Admin.Controllers
             {
                 ViewBag.LanguageID = new SelectList(_context.Languages, "LanguageID", "LanguageName");
                 ViewBag.PublisherID = new SelectList(_context.Publishers, "PublisherID", "PublisherName");
-                ViewModel.Categories = _repository.GetAllCategories();
                 return View(ViewModel);
             }
         }
@@ -149,7 +156,7 @@ namespace BookShop.Areas.Admin.Controllers
             var Book = _context.Books.Find(id);
             if (Book != null)
             {
-                Book.Delete = true;
+                //Book.Delete = true;
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
@@ -185,18 +192,9 @@ namespace BookShop.Areas.Admin.Controllers
                                      select new BooksCreateEditViewModel
                                      {
                                          BookID = b.BookID,
-                                         Title = b.Title,
-                                         ISBN = b.ISBN,
-                                         Price = b.Price,
-                                         Stock = b.Stock,
-                                         IsPublish = (bool)b.IsPublish,
                                          LanguageID = b.LanguageID,
                                          PublisherID = b.Publisher.PublisherID,
                                          PublishYear = b.PublishYear,
-                                         Summary = b.Summary,
-                                         Weight = b.Weight,
-                                         RecentIsPublish=(bool)b.IsPublish,
-                                         PublishDate=b.PublishDate,
 
                                      }).FirstAsync();
 
@@ -208,7 +206,6 @@ namespace BookShop.Areas.Admin.Controllers
 
                     ViewBag.LanguageID = new SelectList(_context.Languages, "LanguageID", "LanguageName");
                     ViewBag.PublisherID = new SelectList(_context.Publishers, "PublisherID", "PublisherName");
-                    ViewModel.Result.SubCategoriesVM = new BooksSubCategoriesViewModel(_repository.GetAllCategories(), CategoriesArray);
 
                     return View(await ViewModel);
                 }
@@ -221,7 +218,6 @@ namespace BookShop.Areas.Admin.Controllers
         {
             ViewBag.LanguageID = new SelectList(_context.Languages, "LanguageID", "LanguageName");
             ViewBag.PublisherID = new SelectList(_context.Publishers, "PublisherID", "PublisherName");
-            ViewModel.SubCategoriesVM = new BooksSubCategoriesViewModel(_repository.GetAllCategories(), ViewModel.CategoryID);
 
             if (ModelState.IsValid)
             {
@@ -245,18 +241,9 @@ namespace BookShop.Areas.Admin.Controllers
                     Book book = new Book()
                     {
                         BookID = ViewModel.BookID,
-                        Title = ViewModel.Title,
-                        ISBN = ViewModel.ISBN,
-                        Price = ViewModel.Price,
-                        Stock = ViewModel.Stock,
-                        IsPublish = ViewModel.IsPublish,
                         LanguageID = ViewModel.LanguageID,
                         PublisherID = ViewModel.PublisherID,
                         PublishYear = ViewModel.PublishYear,
-                        Summary = ViewModel.Summary,
-                        Weight = ViewModel.Weight,
-                        PublishDate=PublishDate,
-                        Delete=false,
                     };
 
                     _context.Update(book);

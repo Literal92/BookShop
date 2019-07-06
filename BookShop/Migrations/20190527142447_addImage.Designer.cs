@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookShop.Migrations
 {
     [DbContext(typeof(BookShopContext))]
-    [Migration("20190510213606_initialphoto")]
-    partial class initialphoto
+    [Migration("20190527142447_addImage")]
+    partial class addImage
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.8-servicing-32085")
+                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -27,37 +27,16 @@ namespace BookShop.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool?>("Delete")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValueSql("0");
+                    b.Property<string>("Caption")
+                        .IsRequired();
 
                     b.Property<string>("File");
 
-                    b.Property<string>("ISBN");
-
-                    b.Property<byte[]>("Image")
-                        .HasColumnType("image");
-
-                    b.Property<bool?>("IsPublish");
-
                     b.Property<int>("LanguageID");
-
-                    b.Property<int>("Price");
-
-                    b.Property<DateTime?>("PublishDate");
 
                     b.Property<int>("PublishYear");
 
                     b.Property<int>("PublisherID");
-
-                    b.Property<int>("Stock");
-
-                    b.Property<string>("Summary");
-
-                    b.Property<string>("Title")
-                        .IsRequired();
-
-                    b.Property<short>("Weight");
 
                     b.HasKey("BookID");
 
@@ -89,7 +68,22 @@ namespace BookShop.Migrations
 
                     b.Property<string>("CategoryName");
 
+                    b.Property<bool?>("Delete")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValueSql("0");
+
+                    b.Property<string>("Detailes");
+
+                    b.Property<string>("File");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("image");
+
+                    b.Property<bool?>("IsPublish");
+
                     b.Property<int?>("ParentCategoryID");
+
+                    b.Property<DateTime?>("PublishDate");
 
                     b.HasKey("CategoryID");
 

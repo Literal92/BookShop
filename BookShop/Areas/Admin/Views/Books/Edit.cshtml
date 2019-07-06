@@ -55,43 +55,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header bg-light">
-                                ویرایش دسته بندی کتاب
-                            </div>
-                            <div class="card-body">
-                                <ul id="category" class="demo1">
-                                    @foreach (var item in Model.SubCategoriesVM.Categories)
-                                    {
-                                    <li>
-                                        @if (Model.SubCategoriesVM.CategoryID != null)
-                                        {
-                                            if (Model.SubCategoriesVM.CategoryID.Contains(item.id))
-                                            {
-                                                <input type="checkbox" name="CategoryID" value="@item.id" checked /> @item.title
-                                            }
-                                            else
-                                            {
-                                                <input type="checkbox" name="CategoryID" value="@item.id" /> @item.title
-                                            }
-                                        }
-                                        else
-                                        {
-                                            <input type="checkbox" name="CategoryID" value="@item.id" /> @item.title
-                                        }
-
-                                        @{ Model.SubCategoriesVM.Categories = item.subs;}
-                                        @await Html.PartialAsync("_SubCategories", Model.SubCategoriesVM)
-
-                                    </li>
-                                    }
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-md-8">

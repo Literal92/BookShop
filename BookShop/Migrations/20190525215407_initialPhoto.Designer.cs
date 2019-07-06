@@ -4,14 +4,16 @@ using BookShop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookShop.Migrations
 {
     [DbContext(typeof(BookShopContext))]
-    partial class BookShopContextModelSnapshot : ModelSnapshot
+    [Migration("20190525215407_initialPhoto")]
+    partial class initialPhoto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,6 +31,9 @@ namespace BookShop.Migrations
                         .IsRequired();
 
                     b.Property<string>("File");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("image");
 
                     b.Property<int>("LanguageID");
 
@@ -73,9 +78,6 @@ namespace BookShop.Migrations
                     b.Property<string>("Detailes");
 
                     b.Property<string>("File");
-
-                    b.Property<byte[]>("Image")
-                        .HasColumnType("image");
 
                     b.Property<bool?>("IsPublish");
 

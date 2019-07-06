@@ -7,14 +7,15 @@ namespace BookShop.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=185.4.30.126,2016;uid=amtavakoli;password=H5w%2oq2;Database=PhotoDB;Trusted_Connection=True;integrated Security=false");
+            optionsBuilder.UseSqlServer(@"Server =185.4.30.126,2016;uid=amtavakoli;password=H5w%2oq2;Database=PhotoDB;Trusted_Connection=True;integrated Security=false");
         }
-
+        //@"Server=.;uid=sa;password=1;Database=PhotoDB;Trusted_Connection=True;integrated Security=true"
+        //@"Server =185.4.30.126,2016;uid=amtavakoli;password=H5w%2oq2;Database=PhotoDB;Trusted_Connection=True;integrated Security=false"
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new Book_CategoryMap());
-            modelBuilder.Entity<Book>().HasQueryFilter(b => (bool)!b.Delete);
-            modelBuilder.Entity<Book>().Property(b => b.Delete).HasDefaultValueSql("0");
+            modelBuilder.Entity<Category>().HasQueryFilter(b => (bool)!b.Delete);
+            modelBuilder.Entity<Category>().Property(b => b.Delete).HasDefaultValueSql("0");
         }
 
         public DbSet<Book> Books { get; set; }

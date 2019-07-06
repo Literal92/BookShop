@@ -15,23 +15,14 @@ namespace BookShop.Models
         public int BookID { get; set; }
 
         [Required]
-        public string Title { get; set; }
-        public string Summary { get; set; }
-        public int Price { get; set; }
-        public int Stock { get; set; }
+        public string Caption { get; set; }
         public string File { get; set; }
-        public short Weight { get; set; }
-        public string ISBN { get; set; }
-        public bool? IsPublish { get; set; }
-        public DateTime? PublishDate { get; set; }
         public int PublishYear { get; set; }
 
-        [DefaultValue("0")]
-        public bool? Delete { get; set; }
+      
         public int PublisherID { get; set; }
 
-        [Column(TypeName ="image")]
-        public byte[] Image { get; set; }
+        
         public int LanguageID { get; set; }
         public Language Language { get; set; }
         public List<Book_Category> book_Categories { get; set; }
@@ -72,6 +63,15 @@ namespace BookShop.Models
         [Key]
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
+        public string Detailes { get; set; }
+        public string  File { get; set; }
+        public bool? IsPublish { get; set; }
+        [DefaultValue("0")]
+        public bool? Delete { get; set; }
+        public DateTime? PublishDate { get; set; }
+        [Column(TypeName = "image")]
+        public byte[] Image { get; set; }
+
 
         [ForeignKey("category")]
         public int? ParentCategoryID { get; set; }

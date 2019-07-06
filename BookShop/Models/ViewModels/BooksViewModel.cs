@@ -8,10 +8,6 @@ namespace BookShop.Models.ViewModels
 {
     public class BooksCreateEditViewModel
     {
-        public BooksCreateEditViewModel(BooksSubCategoriesViewModel _SubCategoriesVM)
-        {
-            SubCategoriesVM = _SubCategoriesVM;
-        }
 
         public BooksCreateEditViewModel()
         {
@@ -22,10 +18,6 @@ namespace BookShop.Models.ViewModels
         public int BookID { get; set; }
 
         public DateTime? PublishDate { get; set; }
-
-        public BooksSubCategoriesViewModel SubCategoriesVM { get; set; }
-
-        public IEnumerable<TreeViewCategory> Categories { get; set; }
 
         [Required(ErrorMessage = "وارد نمودن {0} الزامی است.")]
         [Display(Name = "عنوان ")]
@@ -82,29 +74,6 @@ namespace BookShop.Models.ViewModels
 
 
 
-    public class BooksSubCategoriesViewModel
-    {
-        public BooksSubCategoriesViewModel(List<TreeViewCategory> _Categories, int[] _CategoryID)
-        {
-            Categories = _Categories;
-            CategoryID = _CategoryID;
-        }
-
-        public List<TreeViewCategory> Categories { get; set; }
-        public int[] CategoryID { get; set; }
-    }
-
-    public class AuthorList
-    {
-        public int AuthorID { get; set; }
-        public string NameFamily { get; set; }
-    }
-
-    public class TranslatorList
-    {
-        public int TranslatorID { get; set; }
-        public string NameFamily { get; set; }
-    }
 
     public class BooksIndexViewModel
     {
